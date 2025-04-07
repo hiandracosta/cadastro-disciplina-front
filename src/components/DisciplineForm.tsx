@@ -37,7 +37,6 @@ const semestres = [
 
 const DisciplineForm = () => {
   const location = useLocation();
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     matricula: location.state?.matricula || '',
     semestre: '',
