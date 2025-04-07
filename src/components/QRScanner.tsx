@@ -10,7 +10,6 @@ const QRScanner = () => {
   const [error, setError] = useState<string>('');
   const navigate = useNavigate();
   const controlsRef = useRef<IScannerControls | null>(null);
-  const [isInitialized, setIsInitialized] = useState(false);
 
   const stopScanner = () => {
     if (controlsRef.current) {
@@ -44,7 +43,6 @@ const QRScanner = () => {
         }
       );
       controlsRef.current = controls;
-      setIsInitialized(true);
     } catch (err) {
       setError('Erro ao acessar a câmera. Por favor, permita o acesso à câmera.');
     }
