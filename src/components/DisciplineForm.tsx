@@ -11,9 +11,7 @@ import {
 } from '@mui/material';
 
 const cursos = [
-  'Sistema de Informação',
-  'Direito',
-  'Engenharia Civil'
+  'Sistema de Informação'
 ];
 
 const disciplinas = [
