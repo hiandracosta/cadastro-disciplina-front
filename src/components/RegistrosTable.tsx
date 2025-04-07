@@ -31,7 +31,7 @@ const RegistrosTable = () => {
   useEffect(() => {
     const fetchRegistros = async () => {
       try {
-        const response = await fetch('https://cadastro-disciplina-api-production.up.railway.app:3000/registros');
+        const response = await fetch('https://cadastro-disciplina-api-production.up.railway.app/registros');
         if (!response.ok) {
           throw new Error('Erro ao carregar registros');
         }
