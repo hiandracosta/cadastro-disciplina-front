@@ -78,7 +78,7 @@ const DisciplineForm = () => {
     setErrorMessage('');
 
     try {
-      const response = await fetch('https://cadastro-disciplina-api-production.up.railway.app:3000/registros', {
+      const response = await fetch('https://cadastro-disciplina-api-production.up.railway.app/registros', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
