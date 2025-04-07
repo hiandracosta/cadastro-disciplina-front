@@ -67,7 +67,7 @@ const RegistrosTable = () => {
       gap: 3
     }}>
       <Typography variant="h4" component="h1" gutterBottom>
-        Registros de Disciplinas Optativas
+        Lista de Solicitações
       </Typography>
 
       {error && (
