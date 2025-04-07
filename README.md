@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+# Sistema de Cadastro de Disciplinas Optativas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um sistema web desenvolvido para facilitar o cadastro de disciplinas optativas pelos alunos da Facisa. O sistema utiliza leitura de QR Code para agilizar o processo de cadastro.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Leitura de QR Code**: O sistema lê o QR Code da carteirinha digital do aluno através da câmera do dispositivo.
+- **Cadastro de Disciplinas**: Permite o cadastro de disciplinas optativas com os seguintes dados:
+  - Matrícula do aluno (preenchida automaticamente via QR Code)
+  - Semestre atual
+  - Curso
+  - Disciplina optativa desejada
+- **Visualização de Registros**: Permite visualizar todos os registros de disciplinas cadastradas em formato de tabela.
 
-## Expanding the ESLint configuration
+## Como Usar
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Acesse o Sistema**:
+   - Abra o sistema no navegador
+   - Permita o acesso à câmera quando solicitado
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Leitura do QR Code**:
+   - Abra o app Meu App Unifacisa
+   - Acesse a Carteirinha digital
+   - Posicione o QR Code no scanner
+   - O sistema preencherá automaticamente sua matrícula
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Cadastro de Disciplina**:
+   - Selecione o semestre atual
+   - Escolha seu curso
+   - Selecione a disciplina optativa desejada
+   - Clique em "Enviar" para finalizar o cadastro
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4. **Visualizar Registros**:
+   - Na tela inicial, clique em "Ver Registros"
+   - Visualize todos os cadastros realizados em formato de tabela
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Tecnologias Utilizadas
+
+- React
+- Material-UI
+- ZXing (Biblioteca de leitura de QR Code)
+- TypeScript
+
+## Requisitos do Sistema
+
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- Câmera funcional para leitura do QR Code
+- Conexão com a internet
+
+## Desenvolvido pelo grupo :
+
+- LUIS CARLOS RODRIGUES SILVA  
+- IGOR GABRIEL SOARES 
+- HIANDRA ALVES COSTA
+- MARCOS AURELIO SEGUNDO
+- MARCOS GABRIEL
+- CRISTIAN VIEIRA SILVA LINS
